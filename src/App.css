@@ -1,38 +1,216 @@
-.App {
-  text-align: center;
+#root, body, html {
+    width: 100%;
+    height: auto;
+    background: #030B15; 
+    margin: 0;
+    font-family: Outfit;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html {
+    font-size: 13px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+nav {
+    background-color: #030B15;
+    border: 1px solid #676767; 
+    height: 6.25rem;
+    width: 100%;
+    position: fixed;
+    display: inline-block;
+    overflow: hidden;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+nav > * {
+    float: left;
 }
 
-.App-link {
-  color: #61dafb;
+.title {
+    color: #FFF;
+    font-family: 'Outfit';
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal; 
+    margin : 1.563rem auto 1.563rem 1.375rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+nav > h2 {
+    color: #FFF;
+    font-family: Outfit;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal; 
+    margin-top: 2.375rem;
+    margin-left: 6.813rem;
+    margin-right: auto;
+}
+
+.blue {
+    color: #00C4F4;
+}
+
+.login {
+    width: 13.063rem;
+    height: 4.438rem; 
+    background-color: #00C4F4;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    margin-top: 0.938rem;
+    margin-left: 29rem; 
+    color: #FFF;
+    font-family: Outfit;
+    font-size: 1.625rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal; 
+}
+
+.space {
+    height: 6.25rem;
+}
+
+.home {
+    background-image: url(./images/background.png);
+    height: calc(100vh - 6.25rem);
+    width: 100%;
+    overflow: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.caption {
+    color: #FFF;
+    font-family: Lora;
+    font-size: 4.75rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 6rem;
+    width: 63.75rem;
+    height: 20.625rem;
+    margin-left: 14.625rem;
+    margin-top: 8.875rem;
+    margin-bottom: 0;
+}
+
+.welcome {
+    color: #CFCFCF;
+    font-family: Outfit;
+    font-size: 1.375rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2rem;
+    margin-left: 14.625rem;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.start {
+    width: 13.063rem;
+    height: 4.438rem; 
+    background-color: #00C4F4;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    margin-left: 14.75rem; 
+    margin-top: 0.813rem;
+    color: #FFF;
+    font-family: Outfit;
+    font-size: 1.625rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal; 
+}
+
+.home2 {
+    background-image: url(./images/background2.png);
+    height: calc(100vh - 6.25rem);
+    width: 100%;
+    overflow: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.parameters {
+    height: 40px;
+    width: 400px;
+    background-color: #283542;
+    outline: none;
+    border-radius: 20px; 
+    border: none;
+    padding-left: 30px;
+    color: white;
+    font-size: 18px;
+    font-family: Outfit;
+    margin-bottom: 20px;
+}
+
+.parameters:active,.parameters:focus,.selector:active,.selector:focus {
+    border: #00C4F4 1px solid;
+    background-color: #212121;
+}
+
+.home2 > div {
+    width: 50%;
+}
+
+.home2 {
+    display: flex;
+    flex-direction: row;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.selector {
+    width: 430px;
+    height: 40px;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    padding-left: 30px;
+    background-color: #283542;
+    color: white;
+    font-size: 18px;
+    font-family: Outfit;
+    appearance: none;
+}
+
+.logo {
+    width: 6.25rem;
+    height: 3.375rem;
+    margin-left: 6.813rem;
+    margin-top: 1.438rem;
+}
+
+.submit {
+    width: 10.063rem;
+    height: 40px; 
+    background-color: #00C4F4;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    color: #FFF;
+    font-family: Outfit;
+    font-size: 1.225rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal; 
+    margin-top: 20px;
+}
+
+.result {
+    margin-top: 40%;
+    color: white;
+}
+
+label {
+    font-size: 32px;
+    color: white;
+    margin-bottom: 20px;
 }
